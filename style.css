@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.clock {
+  background-color: #e0e0e0;
+  padding: 25px 35px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 25px #babecc, -10px -10px 25px #fff;
+  text-align: center;
+  transition: all 0.4s ease;
+  margin-top: 2rem;
+}
+
+#time {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#date {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #555;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  box-shadow: 5px 5px 10px #bababa, -5px -5px 10px #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #fff;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode .clock {
+  background-color: #2c2c2c;
+  box-shadow: 10px 10px 25px #1a1a1a, -10px -10px 25px #3d3d3d;
+}
+
+.dark-mode button {
+  background-color: #2c2c2c;
+  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #3d3d3d;
+  color: #f1f1f1;
+}
+
+.dark-mode-date {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode #date{
+  color: #f1f1f1;  
+}
